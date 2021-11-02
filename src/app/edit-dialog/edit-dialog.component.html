@@ -1,0 +1,36 @@
+<div class="modal-header">
+    <h5 class="modal-title" id="exampleModalLabel">Edit User</h5>
+</div>
+<div>
+    <form [formGroup]="user">
+        <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" aria-describedby="UserHelp" formControlName="name" value={{this.Name}}>
+        <small class="err" *ngIf="user.controls.name.touched&&!user.controls.name.dirty&&user.controls.name.value">
+            Name Required!!</small>
+          <small id="UserHelp" class="err"
+            *ngIf="user.controls.name.invalid&&user.controls.name.dirty">Invalid Name!!</small>
+        
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Date</label>
+            <input type="date" class="form-control" aria-describedby="UserHelp" formControlName="date" value={{this.Date}}>
+            <small class="err" *ngIf="user.controls.date.touched&&!user.controls.date.dirty&&user.controls.date.value">
+                Date Required!!</small>
+        </div>
+        <br>
+        <div class="form-group">
+            <label>Role</label>
+            <input type="text" class="form-control" aria-describedby="UserHelp" formControlName="role" value={{this.Role}}>
+            <small class="err" *ngIf="user.controls.role.touched&&!user.controls.role.dirty&&user.controls.role.value">
+                Role Required!!</small>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <small>{{formCheck}}</small>
+    <button type="button" class="btn btn-primary" (click)="save()">Save</button>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="close()">Close</button>
+  </div>
+ 

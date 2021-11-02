@@ -1,0 +1,71 @@
+<div class="signup">
+    <h2>User Management System</h2>
+    <p>Login or Register to Access</p>
+</div>
+<div class="style">
+<div class="container">
+    <div style="text-align:center">
+        <h2>Signin</h2>
+    </div>
+    <form [formGroup]="signinForm">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
+           (change)="emailCheckUnique()">
+        <small class="err" *ngIf="signinForm.controls.email.touched&&!signinForm.controls.email.dirty">Email
+          Required!!</small>
+        <small id="UserHelp" class="err"
+          *ngIf="signinForm.controls.email.invalid&&signinForm.controls.email.dirty">Invalid Email!!</small>
+        <small class="err" *ngIf="emailAlredyExist != ''">
+          {{emailAlredyExist}}
+        </small>
+      </div>
+      <div class="form-group">
+        <label>First Name</label>
+        <input formControlName="username" type="text" class="form-control" id="username" aria-describedby="UserHelp">
+        <small class="err" *ngIf="signinForm.controls.username.touched&&!signinForm.controls.username.dirty">First
+          Name Required!!</small>
+        <small id="UserHelp" class="err"
+          *ngIf="signinForm.controls.username.invalid&&signinForm.controls.username.dirty">Invalid Name!!</small>
+      </div>
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input formControlName="phone" type="text" class="form-control" id="phone" aria-describedby="UserHelp">
+        <small class="err" *ngIf="signinForm.controls.phone.touched&&!signinForm.controls.phone.dirty">Phone
+          Number Required!!</small>
+        <small id="UserHelp" class="err"
+          *ngIf="signinForm.controls.phone.invalid&&signinForm.controls.phone.dirty">Invalid Phone number!!</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input formControlName="password" type="password" class="form-control" id="password" aria-describedby="passHelp">
+        <small class="err"
+          *ngIf="signinForm.controls.password.touched&&!signinForm.controls.password.dirty">Password Required!!</small>
+        <small id="passHelp" class="err"
+          *ngIf="signinForm.controls.password.invalid&&signinForm.controls.password.dirty">Password should have atleast<br>
+          *one capital letter<br>*one small letter<br>*one special character<br>*one number<br>*minimun length should be 9</small>
+      </div>
+      <div class="form-group">
+        <label for="Cpassword">Confirm Password</label>
+        <input formControlName="cpassword" type="password" class="form-control" id="Cpassword"
+          aria-describedby="CpassHelp">
+        <small class="err"
+          *ngIf="signinForm.controls.cpassword.touched&&!signinForm.controls.cpassword.dirty">Confirm Password
+          Required!!</small>
+        <small id="CpassHelp" class="err"
+          *ngIf="(signinForm.controls.cpassword.dirty)&&(signinForm.controls.cpassword.errors?.confirmPassword)">Should
+          be same as Password</small>
+      </div>
+      <br>
+      <small class="err">{{formCheck}}</small>
+      <div class="form-group" class="sign-btn">
+        <button type="button" class="btn btn-dark" (click)="signin()"
+          [disabled]="signinForm.invalid||(emailAlredyExist != '')">Sign
+          Up</button>
+      </div>
+      <div  class="sign-btn">
+      <small>Already have an Account? <a routerLink="" class="link-dark">Login</a></small>
+      </div>
+    </form>
+  </div>
+</div>

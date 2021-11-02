@@ -1,0 +1,29 @@
+.login{
+   height: 430px;
+    float:left;
+    background-color: black;
+    width: 40%;
+    color:white;
+    text-align: center;
+    justify-content: center;
+    padding-top: 20%;
+    padding-bottom: 25%;
+}
+.style{
+   float:right;
+   padding:5%;
+   padding-right:10%;
+    padding-top: 10%; 
+}
+
+.container{
+    width: 500px;
+}
+
+
+.err{
+    color:red;
+}
+.log-btn{
+    text-align: center;
+}

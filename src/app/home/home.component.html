@@ -1,0 +1,40 @@
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">User Management System</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <span class="navbar-text">
+        <a id="change" class="nav-link" routerLink="/"  (click)="Logout()">Logout</a>
+      </span>
+    </div>
+  </nav>
+  <br>
+  
+  <br>
+  <div>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Date Created</th>
+            <th scope="col">Role</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let detail of details;let indexOfelement=index;" >
+            <th scope="row">{{indexOfelement+1}}</th>
+            <td>{{detail.Name}}</td>
+            <td>{{detail.Date}}</td>
+            <td>{{detail.Role}}</td>
+            <td>
+              <a (click)="edit(detail.Name)"><img src="https://d1nhio0ox7pgb.cloudfront.net/_img/o_collection_png/green_dark_grey/512x512/plain/edit.png" width="25px" height="25px"></a>
+              <a (click)="delete(detail.Name)"><img src="https://thumbs.dreamstime.com/b/rounded-151782555.jpg" width="35px" height="35px"></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+  <button class=btn-dark (click)="create()">Create User</button>
