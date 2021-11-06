@@ -34,7 +34,7 @@ export class SignupComponent{
     this.service.sign(data)
       .subscribe(
         data => {
-          this.router.navigate(['/Home']);
+          this.router.navigate(['/home']);
         },err=>{
           console.log(err);
         }

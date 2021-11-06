@@ -36,7 +36,7 @@ export class CreateDialogComponent {
         }
       )
       this.dialog.closeAll();
-      this.router.navigate(['Home']);
+      this.router.navigate(['home']);
     }
     else{
       this.formCheck="Form Invalid!!"

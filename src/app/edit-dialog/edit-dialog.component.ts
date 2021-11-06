@@ -55,7 +55,7 @@ export class EditDialogComponent implements OnInit {
       }
       this.service.userUpdate(this.user.value,this.data.data).subscribe(err=>console.log(err));
       this.dialog.closeAll();
-      this.router.navigate(['Home']);
+      this.router.navigate(['home']);
     }
     else{
       this.formCheck="Form Invalid!!"

@@ -26,7 +26,7 @@ export class LoginComponent  {
       this.result=res;
       if (this.result.data!="no data") {
         sessionStorage.setItem('currentUser', this.result.token);
-        this.router.navigate(["/Home"]);
+        this.router.navigate(["/home"]);
       }
       else {
         this.falseUser = true;
