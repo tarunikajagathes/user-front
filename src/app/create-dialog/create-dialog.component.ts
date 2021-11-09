@@ -32,7 +32,8 @@ export class CreateDialogComponent {
     this.service.user(data)
       .subscribe(
         err=>{
-          console.log(err);
+          alert("Not Allowed to change the data!!");
+          this.router.navigate(['home']);
         }
       )
       this.dialog.closeAll();

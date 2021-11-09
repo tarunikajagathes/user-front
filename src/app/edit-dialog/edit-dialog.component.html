@@ -22,8 +22,12 @@
         <br>
         <div class="form-group">
             <label>Role</label>
-            <input type="text" class="form-control" aria-describedby="UserHelp" formControlName="role" value={{this.Role}}>
-            <small class="err" *ngIf="user.controls.role.touched&&!user.controls.role.dirty&&user.controls.role.value">
+            <select class="form-select" id="inputGroupSelect01" formControlName="role" aria-label="Default select example">
+                <option value="User">User</option>
+                <option value="Admin">Admin</option>
+                <option value="Management">Manager</option>
+              </select>
+            <small class="err" *ngIf="user.controls.role.touched&&!user.controls.role.dirty">
                 Role Required!!</small>
         </div>
     </form>

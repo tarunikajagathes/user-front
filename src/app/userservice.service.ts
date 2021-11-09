@@ -39,4 +39,7 @@ export class UserserviceService {
   public userUpdate(value:any,name:any){
     return this.http.put(`${environment.baseUrl}/user/update`,{value:value,name:name});
   }
+  public access(){
+    return this.http.get(`${environment.baseUrl}/user/access`);
+  }
 }

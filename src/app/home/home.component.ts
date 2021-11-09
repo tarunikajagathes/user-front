@@ -12,6 +12,7 @@ import { UserserviceService } from '../userservice.service';
 export class HomeComponent implements OnInit{
 
   details:any;
+  value:any;
   constructor(private dialog:MatDialog,private service:UserserviceService) { this.data()}
   ngOnInit(){
     this.data();
@@ -22,9 +23,19 @@ export class HomeComponent implements OnInit{
   }
 
   public create(){
-    this.dialog.open(CreateDialogComponent,{height:'455px',width:'455px',disableClose:true}).afterClosed().subscribe(()=>{
-      this.data();
+    this.service.access().subscribe((res)=>{
+      this.value=res;
+      if(this.value.data1!="granted")
+      alert("Forbidden");
+      else{
+        this.dialog.open(CreateDialogComponent,{height:'455px',width:'455px',disableClose:true}).afterClosed().subscribe(()=>{
+          this.data();
+        });
+      }
+    },err=>{
+      console.log(err);
     });
+    
   }
 
 
@@ -35,13 +46,31 @@ export class HomeComponent implements OnInit{
   }
 
   public edit(name:any){
-    this.dialog.open(EditDialogComponent,{height:'455px',width:'455px',disableClose:true,data:{data:name}}).afterClosed().subscribe(()=>{
-      this.data();
+    this.service.access().subscribe((res)=>{
+      this.value=res;
+      if(this.value.data1!="granted")
+      alert("Forbidden");
+      else{
+        this.dialog.open(EditDialogComponent,{height:'455px',width:'455px',disableClose:true,data:{data:name}}).afterClosed().subscribe(()=>{
+          this.data();
+        })
+      }
+    },err=>{
+      console.log(err);
     })
   }
   public delete(name:any){
-    this.service.delete(name).subscribe();
+    this.service.access().subscribe((res)=>{
+      this.value=res;
+      if(this.value.data1!="granted")
+      alert("Forbidden");
+      else{
+        this.service.delete(name).subscribe();
     this.data();
+      }
+    },err=>{
+      console.log(err);
+    });
 
   }
 }
