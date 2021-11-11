@@ -16,7 +16,7 @@
           Required!!</small>
         <small id="UserHelp" class="err"
           *ngIf="signinForm.controls.email.invalid&&signinForm.controls.email.dirty">Invalid Email!!</small>
-        <small class="err" *ngIf="emailAlredyExist != ''">
+        <small class="err" *ngIf="emailAlredyExist !== ''">
           {{emailAlredyExist}}
         </small>
       </div>
@@ -69,7 +69,7 @@
       <small class="err">{{formCheck}}</small>
       <div class="form-group" class="sign-btn">
         <button type="button" class="btn btn-dark" (click)="signin()"
-          [disabled]="signinForm.invalid||(emailAlredyExist != '')">Sign
+          [disabled]="signinForm.invalid||(emailAlredyExist !== '')">Sign
           Up</button>
       </div>
       <div  class="sign-btn">
