@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="5891941941917080206" datatype="html">
+        <source>Create User</source>
+        <target>பயனரை உருவாக்கவும்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8953033926734869941" datatype="html">
+        <source>Name</source>
+        <target>பெயர்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1283415295691176785" datatype="html">
+        <source> Name Required!!</source>
+        <target>பெயர் தேவை!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6791761426488405697" datatype="html">
+        <source>Invalid Name!!</source>
+        <target>தவறான பெயர்!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5838689064322965447" datatype="html">
+        <source>Date Of Birth</source>
+        <target>பிறந்த தேதி</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5452695682303801138" datatype="html">
+        <source> Date Required!!</source>
+        <target>தேதி தேவை!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4145496584631696119" datatype="html">
+        <source>Role</source>
+         <target>பதவி</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5041354590769758251" datatype="html">
+        <source>Admin</source>
+        <target>நிர்வாகி</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2392488717875840729" datatype="html">
+        <source>User</source>
+        <target>பயனர்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1540281436321485610" datatype="html">
+        <source>Manager</source>
+        <target>மேலாளர்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7140993753607689024" datatype="html">
+        <source> Role Required!!</source>
+        <target>பதவி தேவை!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3768927257183755959" datatype="html">
+        <source>Save</source>
+        <target>சேமிக்கவும்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7819314041543176992" datatype="html">
+        <source>Close</source>
+        <target>மூடவும்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/create-dialog/create-dialog.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1211169124143348857" datatype="html">
+        <source>Edit User</source>
+        <target>பயனரைத் திருத்து</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/edit-dialog/edit-dialog.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="725671864863730783" datatype="html">
+        <source>User Management System</source>
+        <target>பயனர் மேலாண்மை அமைப்பு</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3797778920049399855" datatype="html">
+        <source>Logout</source>
+        <target>வெளியேறு</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3193976279273491157" datatype="html">
+        <source>Actions</source>
+        <target>செயல்கள்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/home/home.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="812233158995076061" datatype="html">
+        <source>Login or Register to Access</source>
+        <target>அணுகுவதற்கு உள்நுழையவும் அல்லது பதிவு செய்யவும்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2454050363478003966" datatype="html">
+        <source>Login</source>
+        <target>உள்நுழைக</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4879517228803151475" datatype="html">
+        <source>Email Address</source>
+        <target>மின்னஞ்சல் முகவரி</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5173580614048291465" datatype="html">
+        <source>Invalid Email!!</source>
+        <target>தவறான மின்னஞ்சல்!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4101910895115443438" datatype="html">
+        <source>Username or Password Incorrect</source>
+        <target>பயனர்பெயர் அல்லது கடவுச்சொல் தவறானது</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1431416938026210429" datatype="html">
+        <source>Password</source>
+        <target>கடவுச்சொல்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4446164403710914117" datatype="html">
+        <source>Don&apos;t have an account? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/signup&quot; class=&quot;link-dark&quot; &gt;"/>Sign Up<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>கணக்கு இல்லையா? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;/signup&quot; class=&quot;link-dark&quot; &gt;"/>பதிவு செய்யவும்<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2101902914887471883" datatype="html">
+        <source>Signin</source>
+        <target>உள்நுழைவு</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="177607392530107467" datatype="html">
+        <source>Email Required!!</source>
+        <target>மின்னஞ்சல் தேவை!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">15,16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6028371114637047813" datatype="html">
+        <source>First Name</source>
+        <target>முதல் பெயர்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3569101842327854698" datatype="html">
+        <source>First Name Required!!</source>
+        <target>முதல் பெயர் தேவை!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8194554728555410336" datatype="html">
+        <source>Phone Number</source>
+        <target>தொலைபேசி எண்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1300244747029777316" datatype="html">
+        <source>Phone Number Required!!</source>
+        <target>தொலைபேசி எண் தேவை!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">34,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6144617427344757905" datatype="html">
+        <source>Invalid Phone number!!</source>
+        <target>தவறான தொலைபேசி எண்!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3742657416068781599" datatype="html">
+        <source>Editor</source>
+        <target>ஆசிரியர்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1297001172801365401" datatype="html">
+        <source>Reader</source>
+        <target>வாசகர்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1845491686233377963" datatype="html">
+        <source>Password Required!!</source>
+        <target>கடவுச்சொல்லை தேவை!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3030597538789735732" datatype="html">
+        <source>Password should have atleast<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> *one capital letter<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>*one small letter<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>*one special character<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>*one number<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>*minimun length should be 9</source>
+        <target>கடவுச்சொல் குறைந்தபட்சம் இருக்க வேண்டும்<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/> * ஒரு பெரிய எழுத்துக்கள்<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>* ஒரு சிறிய எழுத்துக்கள்<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>* ஒரு சிறப்பு எண்<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>*ஒரு எண்<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br&gt;"/>* குறைந்தபட்ச நீளம் 9 ஆக இருக்க வேண்டும்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">54,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3241357959735682038" datatype="html">
+        <source>Confirm Password</source>
+        <target>கடவுச்சொல்லை உறுதிப்படுத்தவும்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3444227915043493429" datatype="html">
+        <source>Confirm Password Required!!</source>
+        <target>கடவுச்சொல்லை உறுதிப்படுத்தவும் தேவை!!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">62,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1540378045730956442" datatype="html">
+        <source>Should be same as Password</source>
+        <target>கடவுச்சொல் போலவே இருக்க வேண்டும்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">65,66</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1466012768716286509" datatype="html">
+        <source>Sign Up</source>
+        <target>பதிவு செய்யவும்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">72,73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6922500641198170280" datatype="html">
+        <source>Already have an Account? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;&quot; class=&quot;link-dark&quot; &gt;"/>Login<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <target>ஏற்கனவே ஒரு கணக்கு உள்ளதா? <x id="START_LINK" ctype="x-a" equiv-text="&lt;a routerLink=&quot;&quot; class=&quot;link-dark&quot; &gt;"/>உள்நுழைக<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/signup/signup.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,79 +1,79 @@
 <div class="signup">
-    <h2>User Management System</h2>
-    <p>Login or Register to Access</p>
+    <h2 i18n>User Management System</h2>
+    <p i18n>Login or Register to Access</p>
 </div>
 <div class="style">
 <div class="container">
     <div style="text-align:center">
-        <h2>Signin</h2>
+        <h2 i18n>Signin</h2>
     </div>
     <form [formGroup]="signinForm">
       <div class="form-group">
-        <label for="email">Email Address</label>
+        <label for="email" i18n>Email Address</label>
         <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp"
            (change)="emailCheckUnique()">
-        <small class="err" *ngIf="signinForm.controls.email.touched&&!signinForm.controls.email.dirty">Email
+        <small class="err" *ngIf="signinForm.controls.email.touched&&!signinForm.controls.email.dirty" i18n>Email
           Required!!</small>
         <small id="UserHelp" class="err"
-          *ngIf="signinForm.controls.email.invalid&&signinForm.controls.email.dirty">Invalid Email!!</small>
+          *ngIf="signinForm.controls.email.invalid&&signinForm.controls.email.dirty" i18n>Invalid Email!!</small>
         <small class="err" *ngIf="emailAlredyExist != ''">
           {{emailAlredyExist}}
         </small>
       </div>
       <div class="form-group">
-        <label>First Name</label>
+        <label i18n>First Name</label>
         <input formControlName="username" type="text" class="form-control" id="username" aria-describedby="UserHelp">
-        <small class="err" *ngIf="signinForm.controls.username.touched&&!signinForm.controls.username.dirty">First
+        <small class="err" *ngIf="signinForm.controls.username.touched&&!signinForm.controls.username.dirty" i18n>First
           Name Required!!</small>
         <small id="UserHelp" class="err"
-          *ngIf="signinForm.controls.username.invalid&&signinForm.controls.username.dirty">Invalid Name!!</small>
+          *ngIf="signinForm.controls.username.invalid&&signinForm.controls.username.dirty" i18n>Invalid Name!!</small>
       </div>
       <div class="form-group">
-        <label>Phone Number</label>
+        <label i18n>Phone Number</label>
         <input formControlName="phone" type="text" class="form-control" id="phone" aria-describedby="UserHelp">
-        <small class="err" *ngIf="signinForm.controls.phone.touched&&!signinForm.controls.phone.dirty">Phone
+        <small class="err" *ngIf="signinForm.controls.phone.touched&&!signinForm.controls.phone.dirty" i18n>Phone
           Number Required!!</small>
         <small id="UserHelp" class="err"
-          *ngIf="signinForm.controls.phone.invalid&&signinForm.controls.phone.dirty">Invalid Phone number!!</small>
+          *ngIf="signinForm.controls.phone.invalid&&signinForm.controls.phone.dirty" i18n>Invalid Phone number!!</small>
       </div>
       <div class="form-group">
-        <label>Role</label>
+        <label i18n>Role</label>
         <select class="form-select" id="inputGroupSelect01" formControlName="role" aria-label="Default select example">
-            <option value="Editor">Editor</option>
-            <option value="Reader">Reader</option>
+            <option value="Editor" i18n>Editor</option>
+            <option value="Reader" i18n>Reader</option>
           </select>
-        <small class="err" *ngIf="signinForm.controls.role.touched&&!signinForm.controls.role.dirty">
+        <small class="err" *ngIf="signinForm.controls.role.touched&&!signinForm.controls.role.dirty" i18n>
             Role Required!!</small>
     </div>
       <div class="form-group">
-        <label for="password">Password</label>
+        <label for="password" i18n>Password</label>
         <input formControlName="password" type="password" class="form-control" id="password" aria-describedby="passHelp">
         <small class="err"
-          *ngIf="signinForm.controls.password.touched&&!signinForm.controls.password.dirty">Password Required!!</small>
+          *ngIf="signinForm.controls.password.touched&&!signinForm.controls.password.dirty" i18n>Password Required!!</small>
         <small id="passHelp" class="err"
-          *ngIf="signinForm.controls.password.invalid&&signinForm.controls.password.dirty">Password should have atleast<br>
+          *ngIf="signinForm.controls.password.invalid&&signinForm.controls.password.dirty" i18n>Password should have atleast<br>
           *one capital letter<br>*one small letter<br>*one special character<br>*one number<br>*minimun length should be 9</small>
       </div>
       <div class="form-group">
-        <label for="Cpassword">Confirm Password</label>
+        <label for="Cpassword" i18n>Confirm Password</label>
         <input formControlName="cpassword" type="password" class="form-control" id="Cpassword"
           aria-describedby="CpassHelp">
         <small class="err"
-          *ngIf="signinForm.controls.cpassword.touched&&!signinForm.controls.cpassword.dirty">Confirm Password
+          *ngIf="signinForm.controls.cpassword.touched&&!signinForm.controls.cpassword.dirty" i18n>Confirm Password
           Required!!</small>
         <small id="CpassHelp" class="err"
-          *ngIf="(signinForm.controls.cpassword.dirty)&&(signinForm.controls.cpassword.errors?.confirmPassword)">Should
+          *ngIf="(signinForm.controls.cpassword.dirty)&&(signinForm.controls.cpassword.errors?.confirmPassword)" i18n>Should
           be same as Password</small>
       </div>
       <br>
       <small class="err">{{formCheck}}</small>
       <div class="form-group" class="sign-btn">
         <button type="button" class="btn btn-dark" (click)="signin()"
-          [disabled]="signinForm.invalid||(emailAlredyExist != '')">Sign
+          [disabled]="signinForm.invalid||(emailAlredyExist != '')" i18n>Sign
           Up</button>
       </div>
       <div  class="sign-btn">
-      <small>Already have an Account? <a routerLink="" class="link-dark">Login</a></small>
+      <small i18n>Already have an Account? <a routerLink="" class="link-dark" >Login</a></small>
       </div>
     </form>
   </div>

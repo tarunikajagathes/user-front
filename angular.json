@@ -13,6 +13,13 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n":{
+        "sourceLocale":"en-US",
+        "locales":{
+          "ta":"src/locale/message.ta.xlf",
+          "en":"src/locale/message.xlf"
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -53,6 +60,16 @@
               ],
               "outputHashing": "all"
             },
+            "ta":{
+              "localize":[
+                "ta"
+              ]
+            },
+            "en":{
+              "localize":[
+                "en"
+              ]
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
@@ -69,6 +86,12 @@
           "configurations": {
             "production": {
               "browserTarget": "user-front:build:production"
+            },
+            "ta":{
+              "browserTarget":"user-front:build:ta"
+            },
+            "en":{
+              "browserTarget":"user-front:build:en"
             },
             "development": {
               "browserTarget": "user-front:build:development"

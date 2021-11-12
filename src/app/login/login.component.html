@@ -1,32 +1,32 @@
 <div class="login">
-    <h2>User Management System</h2>
-    <p>Login or Register to Access</p>
+    <h2 i18n>User Management System</h2>
+    <p i18n>Login or Register to Access</p>
 </div>
 <div class="style">
     <div class="container">
         <div class="log-btn">
-          <h2>Login</h2>
+          <h2 i18n>Login</h2>
         </div>
         <br>
         <form [formGroup]="loginForm">
           <div class="form-group">
-            <label for="email">Email Address</label>
+            <label for="email" i18n>Email Address</label>
             <input formControlName="email" type="email" class="form-control" id="email" aria-describedby="emailHelp">
             <small class="err"
-            *ngIf="loginForm.controls.email.invalid&&loginForm.controls.email.dirty">Invalid Email!!</small>
+            *ngIf="loginForm.controls.email.invalid&&loginForm.controls.email.dirty" i18n>Invalid Email!!</small>
           </div>
           <div>
-            <small *ngIf="falseUser" class="err">Username or Password Incorrect</small>
+            <small *ngIf="falseUser" class="err" i18n>Username or Password Incorrect</small>
           </div>
           <div class="form-group">
-            <label for="password">Password</label>
+            <label for="password" i18n>Password</label>
             <input formControlName="password" type="password" class="form-control" id="password" aria-describedby="passHelp">
           </div>
           <br>
           <div class="form-group" class="log-btn">
             <button type="button" class="btn btn-dark" (click)="login()"
-              [disabled]="loginForm.invalid">Login</button><br>
-            <small>Don't have an account? <a routerLink="/signup" class="link-dark">Sign Up</a></small>
+              [disabled]="loginForm.invalid" i18n>Login</button><br>
+            <small i18n>Don't have an account? <a routerLink="/signup" class="link-dark" >Sign Up</a></small>
           </div>
         </form>
       </div>

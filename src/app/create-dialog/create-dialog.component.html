@@ -1,40 +1,40 @@
 <div class="modal-header">
-    <h5 class="modal-title" id="exampleModalLabel">Create User</h5>
+    <h5 class="modal-title" id="exampleModalLabel" i18n>Create User</h5>
 </div>
 <div>
     <form [formGroup]="user">
         <div class="form-group">
-        <label>Name</label>
+        <label i18n>Name</label>
         <input type="text" class="form-control" aria-describedby="UserHelp" formControlName="name">
-        <small class="err" *ngIf="user.controls.name.touched&&!user.controls.name.dirty">
+        <small class="err" *ngIf="user.controls.name.touched&&!user.controls.name.dirty" i18n>
             Name Required!!</small>
           <small id="UserHelp" class="err"
-            *ngIf="user.controls.name.invalid&&user.controls.name.dirty">Invalid Name!!</small>
+            *ngIf="user.controls.name.invalid&&user.controls.name.dirty" i18n>Invalid Name!!</small>
         
         </div>
         <br>
         <div class="form-group">
-            <label>Date Of Birth</label>
+            <label i18n>Date Of Birth</label>
             <input type="date" class="form-control" aria-describedby="UserHelp" formControlName="date">
-            <small class="err" *ngIf="user.controls.date.touched&&!user.controls.date.dirty">
+            <small class="err" *ngIf="user.controls.date.touched&&!user.controls.date.dirty" i18n>
                 Date Required!!</small>
         </div>
         <br>
         <div class="form-group">
-            <label>Role</label>
+            <label i18n>Role</label>
             <select class="form-select" id="inputGroupSelect01" formControlName="role" aria-label="Default select example">
-                <option value="Admin">Admin</option>
-                <option value="User">User</option>
-                <option value="Manager">Manager</option>
+                <option value="Admin" i18n>Admin</option>
+                <option value="User" i18n>User</option>
+                <option value="Manager" i18n>Manager</option>
               </select>
-            <small class="err" *ngIf="user.controls.role.touched&&!user.controls.role.dirty">
+            <small class="err" *ngIf="user.controls.role.touched&&!user.controls.role.dirty" i18n>
                 Role Required!!</small>
         </div>
     </form>
 </div>
 <div class="modal-footer">
     <small>{{formCheck}}</small>
-    <button type="button" class="btn btn-primary" (click)="save()" [disabled]="user.invalid">Save</button>
-    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="close()">Close</button>
+    <button type="button" class="btn btn-primary" (click)="save()" [disabled]="user.invalid" i18n>Save</button>
+    <button type="button" class="btn btn-secondary" data-dismiss="modal" (click)="close()" i18n>Close</button>
   </div>
  
