@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {MatDialog} from '@angular/material/dialog'
 import { CreateDialogComponent } from '../create-dialog/create-dialog.component';
 import { EditDialogComponent } from '../edit-dialog/edit-dialog.component';
+import { RoleComponent } from '../role/role.component';
 import { UserserviceService } from '../userservice.service';
 
 @Component({
@@ -13,6 +14,7 @@ export class HomeComponent implements OnInit{
 
   details:any;
   value:any;
+  role:any;
   constructor(private dialog:MatDialog,private service:UserserviceService) { this.data()}
   ngOnInit(){
     this.data();
@@ -36,6 +38,21 @@ export class HomeComponent implements OnInit{
       console.log(err);
     });
     
+  }
+
+  public createRole(){
+    this.service.access().subscribe((res)=>{
+      this.value=res;
+      if(this.value.data1!="granted")
+      alert("Forbidden");
+      else{
+        this.dialog.open(RoleComponent,{height:'455px',width:'455px',disableClose:true}).afterClosed().subscribe(()=>{
+          this.data();
+        });
+      }
+    },err=>{
+      console.log(err);
+    }); 
   }
 
 

@@ -22,10 +22,8 @@
         <br>
         <div class="form-group">
             <label i18n>Role</label>
-            <select class="form-select" id="inputGroupSelect01" formControlName="role" aria-label="Default select example">
-                <option value="Admin" i18n>Admin</option>
-                <option value="User" i18n>User</option>
-                <option value="Manager" i18n>Manager</option>
+            <select class="form-select" id="inputGroupSelect01" formControlName="role" aria-label="Default select example" >
+                <option [value]="detail.role" *ngFor="let detail of details" i18n>{{detail.role}}</option>
               </select>
             <small class="err" *ngIf="user.controls.role.touched&&!user.controls.role.dirty" i18n>
                 Role Required!!</small>

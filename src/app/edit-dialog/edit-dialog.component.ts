@@ -18,15 +18,17 @@ export class EditDialogComponent implements OnInit {
   Name:any;
   Date:any;
   Role:any;
+  deatils:any;
 
   user:FormGroup=new FormGroup({
     name: new FormControl(null,[Validators.required,Validators.minLength(3),Validators.pattern(/(\b(?:([A-Za-z])(?!\2{2}))+\b)/)]),
     date:new FormControl(null,[Validators.required]),
-    role:new FormControl(null,[Validators.required])
+    role:new FormControl(null)
   })
   constructor( @Inject(MAT_DIALOG_DATA) public data: any,private service:UserserviceService,private dialog:MatDialog,private router:Router) { }
   ngOnInit(){
     this.userData();
+    this.list();
   }
   private userData() {
     this.service.userDetails(this.data.data).subscribe(res => {
@@ -35,6 +37,12 @@ export class EditDialogComponent implements OnInit {
       this.Name=this.details[0].Name;
       this.Date=this.details[0].Date;
       this.Role=this.details[0].Role;
+    })
+  }
+
+  public list(){
+    this.service.roleList().subscribe(res=>{
+      this.details=res;
     })
   }
 

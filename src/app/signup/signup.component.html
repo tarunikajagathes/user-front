@@ -15,13 +15,8 @@
         <small class="err" *ngIf="signinForm.controls.email.touched&&!signinForm.controls.email.dirty" i18n>Email
           Required!!</small>
         <small id="UserHelp" class="err"
-<<<<<<< HEAD
-          *ngIf="signinForm.controls.email.invalid&&signinForm.controls.email.dirty" i18n>Invalid Email!!</small>
-        <small class="err" *ngIf="emailAlredyExist != ''">
-=======
           *ngIf="signinForm.controls.email.invalid&&signinForm.controls.email.dirty">Invalid Email!!</small>
         <small class="err" *ngIf="emailAlredyExist !== ''">
->>>>>>> daecd0989d1ffe06216548cb671c4295faa6d750
           {{emailAlredyExist}}
         </small>
       </div>
@@ -74,11 +69,7 @@
       <small class="err">{{formCheck}}</small>
       <div class="form-group" class="sign-btn">
         <button type="button" class="btn btn-dark" (click)="signin()"
-<<<<<<< HEAD
-          [disabled]="signinForm.invalid||(emailAlredyExist != '')" i18n>Sign
-=======
-          [disabled]="signinForm.invalid||(emailAlredyExist !== '')">Sign
->>>>>>> daecd0989d1ffe06216548cb671c4295faa6d750
+          [disabled]="signinForm.invalid||(emailAlredyExist !== '')" i18n>Sign
           Up</button>
       </div>
       <div  class="sign-btn">

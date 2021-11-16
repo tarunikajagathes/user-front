@@ -5,19 +5,17 @@ import { Router } from '@angular/router';
 import { UserserviceService } from '../userservice.service';
 
 @Component({
-  selector: 'app-create-dialog',
-  templateUrl: './create-dialog.component.html',
-  styleUrls: ['./create-dialog.component.css']
+  selector: 'app-role',
+  templateUrl: './role.component.html',
+  styleUrls: ['./role.component.css']
 })
-export class CreateDialogComponent implements OnInit{
+export class RoleComponent implements OnInit{
 
-  formCheck="";
-  details:any;
+ public formCheck="";
+ public details:any;
 
   user:FormGroup=new FormGroup({
-    name: new FormControl(null,[Validators.required,Validators.minLength(3),Validators.pattern(/(\b(?:([A-Za-z])(?!\2{2}))+\b)/)]),
-    date:new FormControl(null,[Validators.required]),
-    role:new FormControl(null,[Validators.required])
+    role: new FormControl(null,[Validators.required,Validators.minLength(3),Validators.pattern(/(\b(?:([A-Za-z])(?!\2{2}))+\b)/)])
   })
 
   constructor(private dialog:MatDialog, private service:UserserviceService,private router:Router) { }
@@ -25,23 +23,21 @@ export class CreateDialogComponent implements OnInit{
   ngOnInit(){
     this.list();
   }
-  
+
+  public list(){
+    this.service.roleList().subscribe(res=>{
+      this.details=res
+    })
+  }
   public close(){
     this.dialog.closeAll();
 
   }
-
-  public list(){
-    this.service.roleList().subscribe(res=>{
-      this.details=res;
-    })
-  }
-
   public save(){
     if(this.user.valid){
       this.formCheck="";
-    const data = { name: this.user.value.name, date: this.user.value.date, role: this.user.value.role }
-    this.service.user(data)
+    const data = { role: this.user.value.role}
+    this.service.role(data)
       .subscribe(
         err=>{
           alert("Not Allowed to change the data!!");
@@ -55,5 +51,4 @@ export class CreateDialogComponent implements OnInit{
       this.formCheck="Form Invalid!!"
     }
   }
-
 }

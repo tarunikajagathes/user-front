@@ -14,6 +14,7 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { EditDialogComponent } from './edit-dialog/edit-dialog.component';
+import { RoleComponent } from './role/role.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { EditDialogComponent } from './edit-dialog/edit-dialog.component';
     SignupComponent,
     HomeComponent,
     CreateDialogComponent,
-    EditDialogComponent
+    EditDialogComponent,
+    RoleComponent
   ],
   imports: [
     BrowserModule,

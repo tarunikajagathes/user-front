@@ -21,6 +21,14 @@ export class UserserviceService {
     return this.http.post(`${environment.baseUrl}/user`, body)
   }
 
+  public role(body: any) {
+    return this.http.post(`${environment.baseUrl}/user/role`, body)
+  }
+
+  public roleList(){
+    return this.http.get(`${environment.baseUrl}/user/role/list`);
+  }
+
   public emailCheckUnique(email: any) {
     return this.http.get(`${environment.baseUrl}/email/${email}`);
   }
