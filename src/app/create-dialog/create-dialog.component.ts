@@ -16,7 +16,9 @@ export class CreateDialogComponent implements OnInit{
 
   user:FormGroup=new FormGroup({
     name: new FormControl(null,[Validators.required,Validators.minLength(3),Validators.pattern(/(\b(?:([A-Za-z])(?!\2{2}))+\b)/)]),
+    email:new FormControl(null,[Validators.required,Validators.email]),
     date:new FormControl(null,[Validators.required]),
+    password:new FormControl(null,[Validators.required,Validators.minLength(6)]),
     role:new FormControl(null,[Validators.required])
   })
 
@@ -25,7 +27,7 @@ export class CreateDialogComponent implements OnInit{
   ngOnInit(){
     this.list();
   }
-  
+
   public close(){
     this.dialog.closeAll();
 
@@ -40,10 +42,11 @@ export class CreateDialogComponent implements OnInit{
   public save(){
     if(this.user.valid){
       this.formCheck="";
-    const data = { name: this.user.value.name, date: this.user.value.date, role: this.user.value.role }
+    const data = { name: this.user.value.name,email:this.user.value.email, date: this.user.value.date,password:btoa(this.user.value.password), role: this.user.value.role }
     this.service.user(data)
       .subscribe(
         err=>{
+          console.log(err);
           alert("Not Allowed to change the data!!");
           this.router.navigate(['home']);
         }

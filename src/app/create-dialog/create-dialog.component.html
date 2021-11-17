@@ -10,14 +10,30 @@
             Name Required!!</small>
           <small id="UserHelp" class="err"
             *ngIf="user.controls.name.invalid&&user.controls.name.dirty" i18n>Invalid Name!!</small>
-        
         </div>
         <br>
+        <div class="form-group">
+            <label i18n>Email</label>
+            <input type="email" class="form-control" aria-describedby="UserHelp" formControlName="email">
+            <small class="err" *ngIf="user.controls.email.touched&&!user.controls.email.dirty" i18n>
+                Email Required!!</small>
+              <small id="UserHelp" class="err"
+                *ngIf="user.controls.email.invalid&&user.controls.email.dirty" i18n>Invalid Email!!</small>
+            </div>
+            <br>
         <div class="form-group">
             <label i18n>Date Of Birth</label>
             <input type="date" class="form-control" aria-describedby="UserHelp" formControlName="date">
             <small class="err" *ngIf="user.controls.date.touched&&!user.controls.date.dirty" i18n>
                 Date Required!!</small>
+        </div>
+        <br>
+        <div class="form-group">
+            <label i18n>Password</label>
+            <input type="text" class="form-control" aria-describedby="UserHelp" formControlName="password">
+            <small class="err" *ngIf="user.controls.date.touched&&!user.controls.date.dirty" i18n>
+                Password Required!!</small>
+            <small class="err" *ngIf="user.controls.password.dirty&&user.controls.password.invalid">Password should have atleast 6 letters.</small>
         </div>
         <br>
         <div class="form-group">

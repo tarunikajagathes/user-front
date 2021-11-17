@@ -40,6 +40,10 @@ export class UserserviceService {
     return this.http.delete(`${environment.baseUrl}/user/${name}`);
   }
 
+  public delRole(role:any){
+    return this.http.delete(`${environment.baseUrl}/user/role/${role}`)
+  }
+
   public userDetails(name:any){
     return this.http.get(`${environment.baseUrl}/user/data/${name}`);
   }

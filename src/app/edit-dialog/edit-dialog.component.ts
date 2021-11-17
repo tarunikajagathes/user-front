@@ -33,10 +33,9 @@ export class EditDialogComponent implements OnInit {
   private userData() {
     this.service.userDetails(this.data.data).subscribe(res => {
       this.details = res;
-      console.log(this.details[0].Name);
       this.Name=this.details[0].Name;
       this.Date=this.details[0].Date;
-      this.Role=this.details[0].Role;
+      this.Role=this.details[0].role;
     })
   }
 

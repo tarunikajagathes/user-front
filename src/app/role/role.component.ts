@@ -24,15 +24,26 @@ export class RoleComponent implements OnInit{
     this.list();
   }
 
+  public Logout(){
+    sessionStorage.removeItem('currentUser');
+  }
   public list(){
     this.service.roleList().subscribe(res=>{
       this.details=res
     })
   }
-  public close(){
-    this.dialog.closeAll();
-
+  public back(){
+    this.router.navigate(["home"]);
   }
+
+  public deleteRole(role:any){
+    this.service.delRole(role).subscribe(res=>{
+      this.list();
+    },err=>{
+      alert("server error..");
+    })
+  }
+
   public save(){
     if(this.user.valid){
       this.formCheck="";
